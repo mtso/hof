@@ -6,12 +6,6 @@ func add(_ x: Int) -> (Int) -> Int {
     }
 }
 
-// let add = { (x: Int) in
-//     return { (y: Int) in
-//         return x + y
-//     }
-// }
-
 // Each takes a list and a callback function
 // to execute on each item of the list.
 func each<T>(_ list: [T], _ callback: (T) -> ()) {
@@ -20,5 +14,6 @@ func each<T>(_ list: [T], _ callback: (T) -> ()) {
     }
 }
 
-print(add(1)(2))
+// Usage example
+add(1)(2)
 each([1, 2, 3], { (n) in print(n) })
