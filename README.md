@@ -1,6 +1,6 @@
 # Higher-Order Functions
 
-Higher-order functions in different languages.
+Higher-order functions in different languages. Inspired by: [FizzBuzz](https://github.com/zenware/FizzBuzz) and [hello-world](https://github.com/leachim6/hello-world).
 
 Higher-order functions (HOF) are functions that satisfy one or both rules:
 - Returns a function.
