@@ -20,7 +20,7 @@ function(int) -> function(int) -> int
 ```
 
 ### `each`
-`each` is a void function takes a list as its first parameter and a function as its second parameter. It then iterates over the given function passing in each element of the list.
+`each` is a void function takes a list as its first parameter and a function as its second parameter. It then iterates over the given list passing in each element into the function.
 
 ##### type signature
 ```
