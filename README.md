@@ -26,3 +26,11 @@ function(int) -> function(int) -> int
 ```
 function([int], function(int) -> void) -> void
 ```
+
+#### Example Usage
+
+Show how the function is called by calling them in the program's entry point. For example:
+```js
+const three = add(1)(2);
+each([1, 2, 3], console.log);
+```
