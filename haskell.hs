@@ -9,10 +9,11 @@ add :: Num a => a -> a -> a
 add x = (+) x
 
 
--- Applies `callback` function to `items` and returns a list with the results
--- ex: each [1, 2, 3] (add 1)    ==> [2, 3, 4]
-each :: [a] -> (a -> b) -> [b]
-each items callback = map callback items
+-- Applies `callback` function f to `items`(x:xs) and returns a list with the results
+-- ex: each (add 1) [1, 2, 3]    ==> [2, 3, 4]
+each :: (a -> b) -> [a] -> [b]
+each f [] = []
+each f (x:xs) = (f x) : each f xs
 
 
 -- Main function for example purposes
@@ -20,5 +21,5 @@ main :: IO ()
 main = do
   let x = (add 5) 6
   putStrLn $ "Calculating:(add 5) 6 ==> " ++ show x
-  let xs = each [1, 2, 3] (add 1)
-  putStrLn $ "Calculating: each [1, 2, 3] (add 1) ==> " ++ show xs
+  let xs = each (add 1) [1, 2, 3]
+  putStrLn $ "Calculating: each (add 1) [1, 2, 3] ==> " ++ show xs
