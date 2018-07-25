@@ -4,6 +4,7 @@
 add <- function(x) {
     function(y) { x + y }
 }
+
 each <- function(iter, fn) {
     for (i in iter) {
         fn(i)
