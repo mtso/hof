@@ -11,9 +11,9 @@ function add(int $x): callable {
 
 // Accepts a function.
 function each(iterable $list, callable $callback): void {
-  foreach ($list as $element) {
-    $callback($element);
-  }
+    foreach ($list as $element) {
+        $callback($element);
+    }
 }
 
 // Examples.
