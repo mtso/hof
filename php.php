@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Requires PHP 7.1 or greater.
+ */
+
 namespace HOF;
 
 // Returns a function.
