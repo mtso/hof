@@ -3,10 +3,10 @@ where
 
 import System.IO
 
--- Returns a function adding `x` to its parameter
+-- Returns a function adding `x` to its parameter. This example is "pointfree"
 -- ex: (add 5) 6    ==> 11
 add :: Num a => a -> a -> a
-add x = (+) x
+add = (+)
 
 
 -- Applies `callback` function f to `items`(x:xs) and returns a list with the results
