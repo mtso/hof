@@ -1,5 +1,5 @@
 module Main exposing (main)
-
+-- See this code in action at https://ellie-app.com/6SMCPFqXrqsa1
 import Html exposing (Html, text, div, br)
 import String exposing (fromInt)
 import List
