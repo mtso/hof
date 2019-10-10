@@ -1,6 +1,6 @@
 module Main exposing (main)
 
-import Html exposing (Html, text, div)
+import Html exposing (Html, text, div, br)
 import String exposing (fromInt)
 import List
 import Browser
@@ -24,7 +24,7 @@ printHtmlString =
 view : () -> Html ()
 view _ =
     div []
-        ([ printHtmlString <| add 1 2 ] ++ each printHtmlString [ 1, 2, 3 ])
+        ([ printHtmlString <| add 1 2 ] ++ [br [] [] ] ++ each printHtmlString [ 1, 2, 3 ])
 
 update : () -> () -> ()
 update _ _ = ()
