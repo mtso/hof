@@ -1,4 +1,4 @@
-module HOF exposing (main)
+module Main exposing (main)
 
 import Html exposing (Html, text, div)
 import String exposing (fromInt)
